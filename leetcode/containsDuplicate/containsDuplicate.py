@@ -18,8 +18,11 @@ def containsDuplicate(nums):
     #         return True
     # return False
 
-    count = sorted(Counter(nums).values())
-    return True if count[-1] > 1 else False
+    # count = sorted(Counter(nums).values())
+    # return True if count[-1] > 1 else False
+
+    # duplicate check
+    return len(nums) != len(set(nums))
 
 
 print(containsDuplicate([0, 4, 5, 0, 3, 6]))
